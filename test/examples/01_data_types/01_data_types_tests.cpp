@@ -2,6 +2,7 @@
 #include "catch.hpp"
 #include "int.h"
 #include "decimals.h"
+#include "char.h"
 
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
@@ -46,3 +47,10 @@ TEST_CASE("Multiply int and double should return... data types")
 
 /*test case string test ASCII values Joe characters are equal to 74, 111, and 101*/
 
+TEST_CASE("char to aascii representation")
+{
+	REQUIRE(get_char_ascii('A')== 65);
+	REQUIRE(get_char_ascii('J')== 74);
+	REQUIRE(get_char_ascii('o')== 111);
+	REQUIRE(get_char_ascii('e')== 101);
+}
