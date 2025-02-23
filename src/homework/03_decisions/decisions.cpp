@@ -29,18 +29,27 @@ string get_letter_grade_using_if(int grade)
 
 string get_letter_grade_using_switch(int grade)
 {
+    string letter;
     switch (grade/10)
     {
     case 10:
     case 9:
-    return "A";
+
+    letter="A";
+    break;
     case 8:
-    return "B";
+    letter= "B";
+    break;
     case 7:
-    return "C";
+    letter= "C";
+    break;
     case 6:
-    return "D";
+    letter= "D";
+    break;
     default: 
-    return "F";
+    letter= "F";
+    break;
+    
     }
+    return letter;
 }
